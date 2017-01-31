@@ -21,8 +21,10 @@
             <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
         </div>
 
-        <div class="text-right">
+        <div class="form-group text-right">
             <button type="submit" class="btn btn-primary pull-right">Publish</button>
         </div>
+
+        @include('partials.errors')
     </form>
 @endsection
