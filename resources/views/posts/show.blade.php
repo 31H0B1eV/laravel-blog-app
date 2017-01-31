@@ -9,7 +9,13 @@
 
 @section('content')
 	<div class="content">
-         <h1>{{ $post->title }}</h1>
-         <p>{{ $post->body }}</p>
+        <div class="blog-post">
+            <h2 class="blog-post-title">
+              {{ $post->title }}
+            </h2>
+            <p class="blog-post-meta">{{ $post->created_at->toFormattedDateString() }}</p>
+
+            <p>{{ $post->body }}</p>
+        </div><!-- /.blog-post -->
     </div>
 @endsection
