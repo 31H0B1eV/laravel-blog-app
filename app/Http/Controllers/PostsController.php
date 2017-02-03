@@ -41,6 +41,8 @@ class PostsController extends Controller
             new Post(request(['title', 'body']))
         );
 
+        session()->flash('message', 'Your post is published!');
+
         return redirect('/');
     }
 }
